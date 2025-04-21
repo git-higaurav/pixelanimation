@@ -8,7 +8,7 @@ export default function Features (){
         {icon:<Users/>, val:"Community Support"}
     ]
     return(
-        <section className="w-full bg-white flex justify-center items-center py-12  px-3 ">
+        <section className="w-full bg-white flex justify-center items-center py-12  px-3 border-b-1 border-gray-300 ">
             <div className="wrapper flex max-w-[1440px] w-full flex-col md:flex-row lg:justify-between gap-5 text-title">
                {data?.map((data, index)=>{
                 return(
