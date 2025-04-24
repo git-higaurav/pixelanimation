@@ -173,7 +173,7 @@ export default function Contact() {
                         {/* Map */}
                         <div className="h-80 rounded-lg overflow-hidden">
                             <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.123456789012!2d77.12345678901234!3d28.12345678901234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjjCsDA3JzI0LjQiTiA3N8KwMDcnMjQuNCJF!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3473.2808357312438!2d77.71736057606871!3d29.479003645138604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c1b425dbc511f%3A0xaec2ad7e0c1b24bc!2sPixel%20Animation%20Institute!5e0!3m2!1sen!2sin!4v1745496846124!5m2!1sen!2sin"
                                 width="100%"
                                 height="100%"
                                 style={{ border: 0 }}
@@ -259,6 +259,7 @@ export default function Contact() {
                                     <option value="graphic-design">Graphic Design</option>
                                     <option value="motion-design">Motion Design</option>
                                     <option value="video-editing">Video Editing</option>
+                                    <option value="2d-animation">2D Animation</option>
                                 </select>
                                 {errors.course && <p className="text-red-500 text-sm mt-2">{errors.course}</p>}
                             </div>
