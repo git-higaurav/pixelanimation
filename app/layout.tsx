@@ -15,26 +15,27 @@ const Roboto = localFont({
 
 
 export const metadata: Metadata = {
-  title: "Pixel Animation Institute Muzaffarnagar - Graphic Design & Video Editing Courses",
+  title: {
+    default: "Pixel Animation Muzaffarnagar",
+    template: "%s | Pixel Animation Muzaffarnagar"
+  },
+
   description: "Best animation institute in Muzaffarnagar offering professional courses in graphic design, video editing, and motion graphics. Get industry-ready training with expert faculty and practical learning.",
-  keywords: "animation institute muzaffarnagar, graphic design course, video editing course, motion graphics training, animation courses, best animation institute, graphic design institute, video editing institute, motion graphics institute, animation training muzaffarnagar",
-  authors: [{ name: "Gaurav Kumar", url: "https://higaurav.com" }],
-  creator: "Gaurav Kumar",
+  keywords: ["animation institute muzaffarnagar" ,"graphic design course" ,"video editing course","motion graphics training"," animation courses","best animation institute","graphic design institute","video editing institute","motion graphics institute","animation training muzaffarnagar"],
+  authors: [{ name: "Pixel Animation", url: "https://thepixelanimation.com" }],
+  creator: "Pixe Animation",
   publisher: "Pixel Animation Institute",
+  formatDetection: {
+    email: false,
+    address: true,
+    telephone: true,
+  },
   openGraph: {
-    title: "Pixel Animation Institute Muzaffarnagar - Professional Animation Training",
-    description: "Leading animation institute in Muzaffarnagar offering expert training in graphic design, video editing, and motion graphics. Start your creative career today!",
+    title: "Pixel Animation Institute Muzaffarnagar",
+    description: "Pixel animation institute in Muzaffarnagar offering expert training in graphic design, video editing, and motion graphics. Start your creative career today!",
     url: "https://pixelanimation.com",
-    siteName: "Pixel Animation Institute",
-    images: [
-      {
-        url: "/logo.png",
-        width: 500,
-        height: 500,
-        alt: "Pixel Animation Institute Logo",
-      },
-    ],
-    locale: "en_IN",
+    siteName: "Pixel Animation",
+    locale:"en_US",
     type: "website",
   },
   twitter: {
@@ -53,16 +54,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  // verification: {
-  //   google: "your-google-site-verification-code",
-  // },
-  alternates: {
-    canonical: "https://pixelanimation.com",
-  },
-  other: {
-    "instagram:username": "pixel.animation.edu0",
-    "whatsapp:phone": "918077331575",
   },
 };
 
