@@ -98,7 +98,7 @@ export default function Footer() {
 
                 {/* Copyright */}
                 <div className="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
-                    <p>&copy; {new Date().getFullYear()} Pixel Animation. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Pixel Animation. All rights reserved. | Made by <a href="https://higaurav.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline text-white hover:text-gray-200">higaurav.com</a></p>
                 </div>
             </div>
         </footer>
