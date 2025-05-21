@@ -9,6 +9,7 @@ import Footer from "./_pages/footer/page"
 import Header from "./_pages/header/page"
 import Landing from "./_pages/landing/page"
 import Mentors from "./_pages/mentors/page"
+import VideoModel from "./_pages/model/videoMode"
 import Newsletter from "./_pages/newsletter/page"
 import PlacementPage from "./_pages/placement/page"
 import SuccessStories from "./_pages/success-stories/page"
@@ -17,6 +18,7 @@ export default function Home() {
     return (
         <>
           <Header/>
+          <VideoModel/>
           <Landing/>
           <Features/>
           <About/>

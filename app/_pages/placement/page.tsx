@@ -10,9 +10,15 @@ interface TeamMember {
 
 const teamMembers: TeamMember[] = [
   {
+    name: 'Sumit Pal',
+    role: 'Graphic & Motion Designer',
+    company: 'Zennex Media',
+    image: '/placement/sumitpal.webp',
+  },
+  {
     name: 'Chetan Singh',
     role: 'Graphic & Motion Designer',
-    company: 'Flixstock Pvt. Ltd',
+    company: 'Flixstock Pvt. Ltd', 
     image: '/placement/chetan.jpg',
   },
   {
@@ -31,7 +37,7 @@ const teamMembers: TeamMember[] = [
 
 export default function PlacementPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-[100vh] lg:min-h-[90vh] bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 mb-6">
@@ -57,13 +63,13 @@ export default function PlacementPage() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 content-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 content-center">
           {teamMembers.map((member, index) => (
             <div
               key={index}
               className="bg-white rounded-xl shadow-xl overflow-hidden hover:shadow-2xl transition-all duration-300"
             >
-              <div className="relative h-72 w-full overflow-hidden">
+              <div className="relative h-72 md:h-80 lg:h-[400px] w-full overflow-hidden">
                 <Image
                   src={member.image}
                   alt={member.name}
@@ -84,8 +90,6 @@ export default function PlacementPage() {
           ))}
         </div>
 
-
-        
         <div className="text-center mt-16">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">Ready to Write Your Success Story?</h2>
           <button className="bg-blue-600 text-white px-8 py-3 rounded-full font-medium hover:bg-blue-700 transition-colors duration-300" onClick={() => window.open('https://wa.me/918077331575?text=Hi%20Pixel%20Animation%2C%20I%20am%20interested%20in%20joining%20your%20courses.%20Please%20provide%20more%20information%20about%20placement%20opportunities.', '_blank')}>

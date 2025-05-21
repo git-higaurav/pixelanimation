@@ -26,7 +26,6 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.thepixelanimation.com"),
 };
 
-import { AuthProvider } from './context/AuthContext';
 
 export default function RootLayout({
   children,
@@ -38,10 +37,7 @@ export default function RootLayout({
       <body
         className={`${Jost.variable} ${Roboto.variable} antialiased`}
       >
-           <AuthProvider>
-
         {children}
-           </AuthProvider>
       </body>
     </html>
   );
